@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Countries = ({ countries, loading }) => {
   if (loading) {
@@ -10,7 +11,9 @@ export const Countries = ({ countries, loading }) => {
       {countries.map((country) => (
         <li key={country.cca2} className="list-group-item">
           <h5>{country.name.common}</h5>
-          <h1>{country.flag}</h1>
+          <Link to={`./${country.cca2}`}>
+            <h1>{country.flag}</h1>
+          </Link>
         </li>
       ))}
     </ul>

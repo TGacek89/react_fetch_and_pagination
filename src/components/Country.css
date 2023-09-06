@@ -1,0 +1,13 @@
+.flag {
+  display: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(165, 165, 165);
+
+  width: 40vw;
+  height: 90vh;
+}
+
+.flagImg {
+  width: 300px;
+}

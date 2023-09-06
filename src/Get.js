@@ -33,7 +33,7 @@ export const Get = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h1 className="text-primary mb-3">Countries</h1>
       <Countries countries={currentPosts} loading={loading} />
       <Pagination
